@@ -21,6 +21,16 @@
 		D505BF212726A0B100D140D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BEF32726A0B000D140D6 /* Persistence.swift */; };
 		D505BF222726A0B100D140D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D505BEF42726A0B100D140D6 /* Assets.xcassets */; };
 		D505BF232726A0B100D140D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D505BEF42726A0B100D140D6 /* Assets.xcassets */; };
+		D505BF372726A15000D140D6 /* TODOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BF362726A15000D140D6 /* TODOView.swift */; };
+		D505BF392726A15900D140D6 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BF382726A15900D140D6 /* TodoViewModel.swift */; };
+		D505BF3B2726A18C00D140D6 /* TodoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BF3A2726A18C00D140D6 /* TodoStorage.swift */; };
+		D505BF3E2726A22900D140D6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505BF3D2726A22900D140D6 /* CloudKit.framework */; };
+		D505BF412726A23D00D140D6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D505BF402726A23D00D140D6 /* CloudKit.framework */; };
+		D50863272727BFEF007F613F /* TODOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BF362726A15000D140D6 /* TODOView.swift */; };
+		D50863282727BFFC007F613F /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BF382726A15900D140D6 /* TodoViewModel.swift */; };
+		D50863292727C000007F613F /* TodoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D505BF3A2726A18C00D140D6 /* TodoStorage.swift */; };
+		D508632B2727C96A007F613F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D508632A2727C96A007F613F /* SignInView.swift */; };
+		D5D6B61C2727D45B005E15E3 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D6B61B2727D45B005E15E3 /* SignInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,15 @@
 		D505BF122726A0B100D140D6 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D505BF162726A0B100D140D6 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D505BF182726A0B100D140D6 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		D505BF362726A15000D140D6 /* TODOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOView.swift; sourceTree = "<group>"; };
+		D505BF382726A15900D140D6 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		D505BF3A2726A18C00D140D6 /* TodoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStorage.swift; sourceTree = "<group>"; };
+		D505BF3D2726A22900D140D6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		D505BF3F2726A23B00D140D6 /* TODOSync (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TODOSync (iOS).entitlements"; sourceTree = "<group>"; };
+		D505BF402726A23D00D140D6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		D50863252727BE20007F613F /* TODOSync--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TODOSync--iOS--Info.plist"; sourceTree = "<group>"; };
+		D508632A2727C96A007F613F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D5D6B61B2727D45B005E15E3 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D505BF412726A23D00D140D6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D505BF3E2726A22900D140D6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,22 +113,25 @@
 		D505BEE92726A0AF00D140D6 = {
 			isa = PBXGroup;
 			children = (
+				D50863252727BE20007F613F /* TODOSync--iOS--Info.plist */,
+				D505BF3F2726A23B00D140D6 /* TODOSync (iOS).entitlements */,
 				D505BEEE2726A0B000D140D6 /* Shared */,
 				D505BF002726A0B100D140D6 /* macOS */,
 				D505BF092726A0B100D140D6 /* Tests iOS */,
 				D505BF152726A0B100D140D6 /* Tests macOS */,
 				D505BEFA2726A0B100D140D6 /* Products */,
+				D505BF3C2726A22900D140D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D505BEEE2726A0B000D140D6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D505BF322726A11900D140D6 /* Vendor */,
+				D505BF342726A12B00D140D6 /* Module */,
 				D505BEF12726A0B000D140D6 /* TODOSyncApp.swift */,
 				D505BEF22726A0B000D140D6 /* ContentView.swift */,
-				D505BEF32726A0B000D140D6 /* Persistence.swift */,
 				D505BEF42726A0B100D140D6 /* Assets.xcassets */,
-				D505BEEF2726A0B000D140D6 /* TODOSync.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +171,60 @@
 				D505BF182726A0B100D140D6 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		D505BF322726A11900D140D6 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D505BF332726A12100D140D6 /* Core Data */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		D505BF332726A12100D140D6 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D505BEF32726A0B000D140D6 /* Persistence.swift */,
+				D505BEEF2726A0B000D140D6 /* TODOSync.xcdatamodeld */,
+				D505BF3A2726A18C00D140D6 /* TodoStorage.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		D505BF342726A12B00D140D6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				D50863262727BF1C007F613F /* SignIn With Apple ID */,
+				D505BF352726A13800D140D6 /* TODOList */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D505BF352726A13800D140D6 /* TODOList */ = {
+			isa = PBXGroup;
+			children = (
+				D505BF382726A15900D140D6 /* TodoViewModel.swift */,
+				D505BF362726A15000D140D6 /* TODOView.swift */,
+			);
+			path = TODOList;
+			sourceTree = "<group>";
+		};
+		D505BF3C2726A22900D140D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D505BF402726A23D00D140D6 /* CloudKit.framework */,
+				D505BF3D2726A22900D140D6 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D50863262727BF1C007F613F /* SignIn With Apple ID */ = {
+			isa = PBXGroup;
+			children = (
+				D508632A2727C96A007F613F /* SignInView.swift */,
+				D5D6B61B2727D45B005E15E3 /* SignInViewModel.swift */,
+			);
+			path = "SignIn With Apple ID";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +308,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					D505BEF82726A0B100D140D6 = {
 						CreatedOnToolsVersion = 13.0;
@@ -307,9 +385,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D505BF392726A15900D140D6 /* TodoViewModel.swift in Sources */,
+				D505BF3B2726A18C00D140D6 /* TodoStorage.swift in Sources */,
+				D505BF372726A15000D140D6 /* TODOView.swift in Sources */,
 				D505BF1C2726A0B100D140D6 /* TODOSyncApp.swift in Sources */,
 				D505BF202726A0B100D140D6 /* Persistence.swift in Sources */,
+				D5D6B61C2727D45B005E15E3 /* SignInViewModel.swift in Sources */,
 				D505BF1A2726A0B100D140D6 /* TODOSync.xcdatamodeld in Sources */,
+				D508632B2727C96A007F613F /* SignInView.swift in Sources */,
 				D505BF1E2726A0B100D140D6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50863282727BFFC007F613F /* TodoViewModel.swift in Sources */,
+				D50863292727C000007F613F /* TodoStorage.swift in Sources */,
+				D50863272727BFEF007F613F /* TODOView.swift in Sources */,
 				D505BF1D2726A0B100D140D6 /* TODOSyncApp.swift in Sources */,
 				D505BF212726A0B100D140D6 /* Persistence.swift in Sources */,
 				D505BF1B2726A0B100D140D6 /* TODOSync.xcdatamodeld in Sources */,
@@ -475,17 +561,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TODOSync (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SCZQ3M4JVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TODOSync--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,17 +593,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TODOSync (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SCZQ3M4JVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TODOSync--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,6 +627,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -565,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

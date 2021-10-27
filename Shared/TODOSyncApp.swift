@@ -9,12 +9,27 @@ import SwiftUI
 
 @main
 struct TODOSyncApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            #if os(iOS)
+            TabView {
+                TODOView()
+                    .tabItem {
+                        Image(systemName: "list.bullet")
+                        Text("TODO")
+                    }
+                SignInView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("TODO")
+                    }
+            }
+            #else
+            TODOView()
+            
+            #endif
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
